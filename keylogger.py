@@ -30,14 +30,3 @@ if __name__ == "__main__":
     input() # prompts for input
 
 
-
-
-
-#---------------------------------------------------------
-#Sources:
-#  https://pynput.readthedocs.io/en/latest/keyboard.html
-#  https://pypi.org/project/pynput/
-#  https://stackoverflow.com/questions/1466000/difference-between-modes-a-a-w-w-and-r-in-built-in-open-function
-#  https://www.geeksforgeeks.org/how-to-use-pynput-to-make-a-keylogger/
-#  https://www.youtube.com/watch?v=mDY3v2Xx-Q4&list=PLAnY4BB0CE5CGeXCCu5h8_OAI093px0ZK&index=16
-#---------------------------------------------------------
